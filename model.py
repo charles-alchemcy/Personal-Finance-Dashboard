@@ -5,7 +5,6 @@ import pickle
 
 # Load data
 data = pd.read_csv('user_spending.csv')  # Change to your data source
-
 # Preprocess data
 data['date'] = pd.to_datetime(data['date'])
 data['day_of_week'] = data['date'].dt.dayofweek
