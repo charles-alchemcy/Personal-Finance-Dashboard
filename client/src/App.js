@@ -6,6 +6,7 @@ function App() {
     const [data, setData] = useState([]);
     const userId = 'user123'; // Hardcoded for demo purposes
 
+    
     useEffect(() => {
         axios.get(`/api/user-data/${userId}`)
             .then(response => {
